@@ -1,0 +1,42 @@
+.gridInicio {
+  display: grid;
+  grid-template-columns: 0.1fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "headerinicio headerinicio" "aside main" "footer footer"; }
+
+.headerGeneral {
+  background-color: plum;
+  text-align: center;
+  grid-area: headerinicio; }
+  .headerGeneral .imgHeaderGeneral {
+    width: 15rem; }
+  .headerGeneral .nav-item:hover {
+    background-color: #df50df;
+    border-radius: 10px; }
+
+.mainInicio {
+  background-color: #fab0fa;
+  text-align: center;
+  grid-area: main; }
+  .mainInicio .bienvenidos {
+    font-size: 4rem;
+    padding: 2rem; }
+  .mainInicio .bienvenidos:hover {
+    color: #ec2cec; }
+
+.asideInicio {
+  background-color: #fab0fa;
+  grid-area: aside; }
+
+.divAsideInicio {
+  padding-top: 17rem; }
+
+.logoInstagram, .logoFacebook {
+  width: 2.5rem;
+  margin: 10px; }
+
+.footerInicio {
+  background-color: plum;
+  text-align: center;
+  padding: 1.2rem;
+  grid-area: footer; }
