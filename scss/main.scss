@@ -1,6 +1,19 @@
 //import
 
-@import "utilities/variables"
+@import "utilities/variables";
+
+//mixin
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%botones {
+    background-color: rgb(223, 80, 223);
+        border-radius: 1rem;
+}
 
 //nesting
 
@@ -23,12 +36,11 @@
     }
 
     .nav-item:hover{
-        background-color: rgb(223, 80, 223);
-        border-radius: 10px;
+        @extend %botones;
     }
 }
 
-.mainInicio{
+.mainGeneral{
     background-color: $color-secundario;
     text-align: center;
     grid-area: main;
@@ -57,9 +69,33 @@
     margin: 10px;
 }
 
-.footerInicio{
+.footerGeneral{
     background-color: $color-principal;
     text-align: center;
     padding: 1.2rem;
     grid-area: footer;
+}
+
+.logos{
+    @include flex;
+    margin: 1rem;
+}
+
+/*CATALOGO*/ 
+
+
+
+/*CONOCENOS*/ 
+
+/*CONTACTO*/ 
+
+.mainContacto{
+    padding: 8rem;
+}
+
+/*OPINIONES*/
+
+.mainOpiniones{
+    @include flex;
+    background-color: $color-secundario;
 }

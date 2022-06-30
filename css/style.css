@@ -1,3 +1,7 @@
+.headerGeneral .nav-item:hover {
+  background-color: #df50df;
+  border-radius: 1rem; }
+
 .gridInicio {
   display: grid;
   grid-template-columns: 0.1fr 3fr;
@@ -10,18 +14,15 @@
   grid-area: headerinicio; }
   .headerGeneral .imgHeaderGeneral {
     width: 15rem; }
-  .headerGeneral .nav-item:hover {
-    background-color: #df50df;
-    border-radius: 10px; }
 
-.mainInicio {
+.mainGeneral {
   background-color: #fab0fa;
   text-align: center;
   grid-area: main; }
-  .mainInicio .bienvenidos {
+  .mainGeneral .bienvenidos {
     font-size: 4rem;
     padding: 2rem; }
-  .mainInicio .bienvenidos:hover {
+  .mainGeneral .bienvenidos:hover {
     color: #ec2cec; }
 
 .asideInicio {
@@ -35,8 +36,27 @@
   width: 2.5rem;
   margin: 10px; }
 
-.footerInicio {
+.footerGeneral {
   background-color: plum;
   text-align: center;
   padding: 1.2rem;
   grid-area: footer; }
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem; }
+
+/*CATALOGO*/
+/*CONOCENOS*/
+/*CONTACTO*/
+.mainContacto {
+  padding: 8rem; }
+
+/*OPINIONES*/
+.mainOpiniones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fab0fa; }
