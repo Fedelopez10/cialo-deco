@@ -4,14 +4,18 @@
 
 .gridInicio {
   display: grid;
-  grid-template-columns: 0.1fr 3fr;
+  grid-template-columns: 1fr 0fr;
   grid-template-rows: 1fr 2fr;
-  grid-template-areas: "headerinicio headerinicio" "aside main" "footer footer"; }
+  grid-template-areas: "headerinicio headerinicio" "main main" "footer footer"; }
 
 .headerGeneral {
-  background-color: plum;
+  background-color: #d6b6d6;
   text-align: center;
-  grid-area: headerinicio; }
+  align-items: center;
+  font-family: 'Calistoga', cursive;
+  color: #240624;
+  max-width: 100vw;
+  margin: 0; }
   .headerGeneral .imgHeaderGeneral {
     width: 15rem; }
 
@@ -25,22 +29,23 @@
   .mainGeneral .bienvenidos:hover {
     color: #ec2cec; }
 
-.asideInicio {
-  background-color: #fab0fa;
-  grid-area: aside; }
+.logoInstagram {
+  width: 45px; }
 
-.divAsideInicio {
-  padding-top: 17rem; }
-
-.logoInstagram, .logoFacebook {
-  width: 2.5rem;
+.logoFacebook {
+  width: 34px;
   margin: 10px; }
 
 .footerGeneral {
   background-color: plum;
   text-align: center;
-  padding: 1.2rem;
+  padding: 10px;
   grid-area: footer; }
+
+.divAsideInicio {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .logos {
   display: flex;
@@ -48,15 +53,126 @@
   align-items: center;
   margin: 1rem; }
 
+@media screen and (min-width: 600px) {
+  .h1General {
+    font-size: 50px; } }
+
+@media screen and (min-width: 1024px) {
+  .divMainOpi {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
 /*CATALOGO*/
+.card {
+  background-color: plum; }
+  .card .texto-1 {
+    margin-top: 30px; }
+  .card .texto-2 {
+    margin-top: 45px; }
+  .card .texto-3 {
+    margin-top: 100px; }
+  .card .texto-5 {
+    margin-top: 115px; }
+  .card .texto-6 {
+    margin-top: 75px; }
+  .card .btn {
+    color: black;
+    background: #6f66f7;
+    border: 2px solid #daafd0;
+    border-radius: 6px; }
+  .card .btn:hover {
+    background-color: #f047f0;
+    border: #f047f0; }
+
 /*CONOCENOS*/
+.bodyConocenos {
+  background-image: url(../img/sala-de-estar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bodyConocenos .bodyConocenos {
+    background-attachment: fixed; }
+
+.mainConocenos {
+  display: flex;
+  justify-content: space-evenly;
+  /*  GRADIANTES */ }
+  .mainConocenos .loremConocenos {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #887a7a;
+    margin: 50px;
+    color: #0c0009; }
+  .mainConocenos .loremConocenos {
+    background: radial-gradient(circle, #bdbdbd, violet); }
+
 /*CONTACTO*/
+.mainContacto {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f1c6f1;
+  align-items: center;
+  padding: 10rem; }
+
+.legendContacto {
+  background-color: #d6b6d6;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.formContacto {
+  margin: 0 auto;
+  background-color: antiquewhite;
+  border-radius: 10px; }
+
+.divForm {
+  margin: 10px;
+  text-align: left; }
+
+.botonForm {
+  margin-top: 25px;
+  margin-bottom: 10px; }
+
+.footerContacto {
+  background-color: #d6b6d6;
+  text-align: center; }
+
+.h3Contacto {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Calistoga', cursive; }
+
 .mainContacto {
   padding: 8rem; }
 
 /*OPINIONES*/
-.divMainOpi {
+.mainOpiniones {
+  background-color: #f1c6f1;
+  text-align: center;
+  padding: 20px;
+  flex-wrap: nowrap; }
+
+.divOpinionesGeneral {
+  background-color: #eb3beb;
+  margin: 10px;
+  border-radius: 10px; }
+
+.h3MainOpiniones {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 60px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fab0fa; }
+  flex-wrap: nowrap; }
+
+.h2MainOpiniones {
+  background-color: plum;
+  font-size: 40px; }
+
+.h3Opiniones {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Calistoga', cursive; }

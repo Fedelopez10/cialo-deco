@@ -19,17 +19,21 @@
 
 .gridInicio{
     display: grid;
-    grid-template-columns: 0.1fr 3fr;
+    grid-template-columns: 1fr 0fr;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "headerinicio headerinicio"
-                         "aside main"
+                         "main main"
                          "footer footer";
 }
 
 .headerGeneral{
-    background-color: $color-principal;
+    background-color: rgb(214, 182, 214);
     text-align: center;
-    grid-area: headerinicio;
+    align-items: center;
+    font-family: 'Calistoga', cursive;
+    color: rgb(36, 6, 36);
+    max-width: 100vw;
+    margin: 0;
     
 .imgHeaderGeneral{
         width: 15rem;
@@ -55,25 +59,23 @@
     }
 }
 
-.asideInicio{
-    background-color: $color-secundario;
-    grid-area: aside;
+.logoInstagram{
+    width: 45px;
 }
-
-.divAsideInicio{
-    padding-top: 17rem;
-}
-
-.logoInstagram, .logoFacebook{
-    width: 2.5rem;
+.logoFacebook{
+    width: 34px;
     margin: 10px;
 }
 
 .footerGeneral{
     background-color: $color-principal;
     text-align: center;
-    padding: 1.2rem;
+    padding: 10px;
     grid-area: footer;
+}
+
+.divAsideInicio{
+    @include flex;
 }
 
 .logos{
@@ -81,13 +83,139 @@
     margin: 1rem;
 }
 
+@media screen and (min-width:600px){
+
+    .h1General{
+        font-size: 50px;
+    }
+}
+    
+
+@media screen and (min-width:1024px){
+    .divMainOpi{
+        @include flex;
+    }
+}
+
 /*CATALOGO*/ 
 
+.card{
+    background-color: plum;
 
+    .texto-1{
+        margin-top: 30px;
+    }
+
+    .texto-2{
+        margin-top: 45px;
+    }
+
+    .texto-3{
+        margin-top: 100px;
+    }
+
+    .texto-5{
+        margin-top: 115px;
+    }
+
+    .texto-6{
+        margin-top: 75px;
+    }
+
+    .btn{
+        color: black;
+        background: rgb(111, 102, 247);
+        border: 2px solid rgb(218, 175, 208);
+        border-radius: 6px;
+    }
+    
+    .btn:hover{
+        background-color: rgb(240, 71, 240);
+        border:rgb(240, 71, 240) ;
+    }
+    
+}
 
 /*CONOCENOS*/ 
 
-/*CONTACTO*/ 
+.bodyConocenos{
+    background-image: url(../img/sala-de-estar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    .bodyConocenos{
+        background-attachment: fixed;
+    }
+
+}
+
+.mainConocenos{
+    display: flex;
+    justify-content: space-evenly;
+
+    .loremConocenos{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        font-size: x-large;
+        text-align: center;
+        border-radius: 10px;
+        border: 2px solid rgb(136, 122, 122);
+        margin: 50px;
+        color: rgb(12, 0, 9);
+    }
+    
+    /*  GRADIANTES */
+    .loremConocenos{
+        background: radial-gradient(circle, rgb(189, 189, 189), violet);
+    }
+}
+
+
+/*CONTACTO*/
+
+.mainContacto{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(241, 198, 241);
+    align-items: center;
+    padding: 10rem;
+}
+
+.legendContacto{
+    background-color: rgb(214, 182, 214); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.formContacto{
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.divForm{
+    margin: 10px;
+    text-align: left;
+}
+
+.botonForm{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.footerContacto{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+}
+
+ .h3Contacto{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+}
 
 .mainContacto{
     padding: 8rem;
@@ -95,7 +223,33 @@
 
 /*OPINIONES*/
 
-.divMainOpi{
-    @include flex;
-    background-color: $color-secundario;
+.mainOpiniones{
+    background-color: rgb(241, 198, 241);
+    text-align: center; 
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.divOpinionesGeneral{
+    background-color: rgb(235, 59, 235);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.h3MainOpiniones{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.h2MainOpiniones{
+    background-color: plum;
+    font-size: 40px ;
+}
+
+.h3Opiniones{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
 }
