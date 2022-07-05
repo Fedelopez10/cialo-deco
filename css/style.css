@@ -18,6 +18,10 @@
   margin: 0; }
   .headerGeneral .imgHeaderGeneral {
     width: 15rem; }
+  .headerGeneral .hamb {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .mainGeneral {
   background-color: #fab0fa;
@@ -64,6 +68,9 @@
     align-items: center; } }
 
 /*CATALOGO*/
+.row {
+  margin: 0%; }
+
 .card {
   background-color: plum; }
   .card .texto-1 {

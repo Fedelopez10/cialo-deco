@@ -42,7 +42,14 @@
     .nav-item:hover{
         @extend %botones;
     }
-}
+
+    .hamb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
 
 .mainGeneral{
     background-color: $color-secundario;
@@ -98,6 +105,10 @@
 }
 
 /*CATALOGO*/ 
+
+.row{
+    margin: 0%;
+}
 
 .card{
     background-color: plum;
