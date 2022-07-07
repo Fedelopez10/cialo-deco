@@ -28,10 +28,11 @@
   text-align: center;
   grid-area: main; }
   .mainGeneral .bienvenidos {
-    font-size: 4rem;
-    padding: 2rem; }
+    font-size: 3rem; }
   .mainGeneral .bienvenidos:hover {
     color: #ec2cec; }
+  .mainGeneral .imgCialoInicio {
+    width: 100%; }
 
 .logoInstagram {
   width: 45px; }
