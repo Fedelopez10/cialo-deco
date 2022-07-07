@@ -17,15 +17,6 @@
 
 //nesting
 
-.gridInicio{
-    display: grid;
-    grid-template-columns: 1fr 0fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: "headerinicio headerinicio"
-                         "main main"
-                         "footer footer";
-}
-
 .headerGeneral{
     background-color: rgb(214, 182, 214);
     text-align: center;
@@ -36,7 +27,7 @@
     margin: 0;
     
 .imgHeaderGeneral{
-        width: 15rem;
+        width: 12rem;
     }
 
     .nav-item:hover{
@@ -54,10 +45,9 @@
 .mainGeneral{
     background-color: $color-secundario;
     text-align: center;
-    grid-area: main;
 
     .bienvenidos{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .bienvenidos:hover{
@@ -65,7 +55,7 @@
     }
 
     .imgCialoInicio{
-        width: 100%;
+        width: 20rem;
     }
 }
 
@@ -81,7 +71,6 @@
     background-color: $color-principal;
     text-align: center;
     padding: 10px;
-    grid-area: footer;
 }
 
 .divAsideInicio{
@@ -104,6 +93,10 @@
 @media screen and (min-width:1024px){
     .divMainOpi{
         @include flex;
+    }
+    
+    .mainConocenos{
+        padding: 5rem;
     }
 }
 
@@ -137,35 +130,26 @@
     }
 
     .btn{
+        background-color: rgb(214, 69, 243);
         color: black;
-        background: rgb(111, 102, 247);
-        border: 2px solid rgb(218, 175, 208);
-        border-radius: 6px;
+        border: rgb(248, 45, 248) 0.5px solid;
+        border-radius: 10px;
+        padding: 0.5;
     }
     
     .btn:hover{
-        background-color: rgb(240, 71, 240);
-        border:rgb(240, 71, 240) ;
+        background-color: plum;
+        color: white;
     }
     
 }
 
 /*CONOCENOS*/ 
 
-.bodyConocenos{
-    background-image: url(../img/sala-de-estar.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-
-    .bodyConocenos{
-        background-attachment: fixed;
-    }
-
-}
-
 .mainConocenos{
     display: flex;
     justify-content: space-evenly;
+    background-color: $color-secundario;
 
     .loremConocenos{
         display: flex;
@@ -213,11 +197,28 @@
 .divForm{
     margin: 10px;
     text-align: left;
+
+    .contacto{
+        background-color: plum;
+    }
 }
 
 .botonForm{
     margin-top: 25px;
     margin-bottom: 10px;
+
+    .btnForm{
+        background-color: rgb(214, 69, 243);
+        color: black;
+        border: rgb(248, 45, 248) 5px;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .btnForm:hover{
+        background-color: plum;
+        color: white;
+    }
 }
 
 .footerContacto{

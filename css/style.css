@@ -2,12 +2,6 @@
   background-color: #df50df;
   border-radius: 1rem; }
 
-.gridInicio {
-  display: grid;
-  grid-template-columns: 1fr 0fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "headerinicio headerinicio" "main main" "footer footer"; }
-
 .headerGeneral {
   background-color: #d6b6d6;
   text-align: center;
@@ -17,7 +11,7 @@
   max-width: 100vw;
   margin: 0; }
   .headerGeneral .imgHeaderGeneral {
-    width: 15rem; }
+    width: 12rem; }
   .headerGeneral .hamb {
     display: flex;
     justify-content: center;
@@ -25,14 +19,13 @@
 
 .mainGeneral {
   background-color: #fab0fa;
-  text-align: center;
-  grid-area: main; }
+  text-align: center; }
   .mainGeneral .bienvenidos {
-    font-size: 3rem; }
+    font-size: 2rem; }
   .mainGeneral .bienvenidos:hover {
     color: #ec2cec; }
   .mainGeneral .imgCialoInicio {
-    width: 100%; }
+    width: 20rem; }
 
 .logoInstagram {
   width: 45px; }
@@ -44,8 +37,7 @@
 .footerGeneral {
   background-color: plum;
   text-align: center;
-  padding: 10px;
-  grid-area: footer; }
+  padding: 10px; }
 
 .divAsideInicio {
   display: flex;
@@ -66,7 +58,9 @@
   .divMainOpi {
     display: flex;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .mainConocenos {
+    padding: 5rem; } }
 
 /*CATALOGO*/
 .row {
@@ -85,25 +79,20 @@
   .card .texto-6 {
     margin-top: 75px; }
   .card .btn {
+    background-color: #d645f3;
     color: black;
-    background: #6f66f7;
-    border: 2px solid #daafd0;
-    border-radius: 6px; }
+    border: #f82df8 0.5px solid;
+    border-radius: 10px;
+    padding: 0.5; }
   .card .btn:hover {
-    background-color: #f047f0;
-    border: #f047f0; }
+    background-color: plum;
+    color: white; }
 
 /*CONOCENOS*/
-.bodyConocenos {
-  background-image: url(../img/sala-de-estar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .bodyConocenos .bodyConocenos {
-    background-attachment: fixed; }
-
 .mainConocenos {
   display: flex;
   justify-content: space-evenly;
+  background-color: #fab0fa;
   /*  GRADIANTES */ }
   .mainConocenos .loremConocenos {
     display: flex;
@@ -141,10 +130,21 @@
 .divForm {
   margin: 10px;
   text-align: left; }
+  .divForm .contacto {
+    background-color: plum; }
 
 .botonForm {
   margin-top: 25px;
   margin-bottom: 10px; }
+  .botonForm .btnForm {
+    background-color: #d645f3;
+    color: black;
+    border: #f82df8 5px;
+    border-radius: 10px;
+    padding: 0.5rem; }
+  .botonForm .btnForm:hover {
+    background-color: plum;
+    color: white; }
 
 .footerContacto {
   background-color: #d6b6d6;
