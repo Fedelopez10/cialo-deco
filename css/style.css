@@ -1,9 +1,9 @@
 .headerGeneral .nav-item:hover {
-  background-color: #df50df;
+  background-color: #f7c882;
   border-radius: 1rem; }
 
 .headerGeneral {
-  background-color: #d6b6d6;
+  background-color: #fae2ce;
   text-align: center;
   align-items: center;
   font-family: 'Calistoga', cursive;
@@ -18,12 +18,12 @@
     align-items: center; }
 
 .mainGeneral {
-  background-color: #fab0fa;
+  background-color: #ffeedd;
   text-align: center; }
   .mainGeneral .bienvenidos {
     font-size: 2rem; }
   .mainGeneral .bienvenidos:hover {
-    color: #ec2cec; }
+    color: #f7c882; }
   .mainGeneral .imgCialoInicio {
     width: 20rem; }
 
@@ -35,7 +35,7 @@
   margin: 10px; }
 
 .footerGeneral {
-  background-color: plum;
+  background-color: #fae2ce;
   text-align: center;
   padding: 10px; }
 
@@ -51,10 +51,17 @@
   margin: 1rem; }
 
 @media screen and (min-width: 600px) {
+  .headerGeneral {
+    display: flex;
+    justify-content: space-between; }
   .h1General {
     font-size: 50px; } }
 
 @media screen and (min-width: 1024px) {
+  .imgHeaderGeneral {
+    width: 50px; }
+  .h1General {
+    font-size: 40px; }
   .divMainOpi {
     display: flex;
     justify-content: center;
@@ -67,7 +74,7 @@
   margin: 0%; }
 
 .card {
-  background-color: plum; }
+  background-color: white; }
   .card .texto-1 {
     margin-top: 30px; }
   .card .texto-2 {
@@ -79,20 +86,20 @@
   .card .texto-6 {
     margin-top: 75px; }
   .card .btn {
-    background-color: #d645f3;
+    background-color: #fae2ce;
     color: black;
-    border: #f82df8 0.5px solid;
+    border: solid 0.5px;
     border-radius: 10px;
     padding: 0.5; }
   .card .btn:hover {
-    background-color: plum;
+    background-color: #d4b17c;
     color: white; }
 
 /*CONOCENOS*/
 .mainConocenos {
   display: flex;
   justify-content: space-evenly;
-  background-color: #fab0fa;
+  background-color: #ffeedd;
   /*  GRADIANTES */ }
   .mainConocenos .loremConocenos {
     display: flex;
@@ -100,12 +107,12 @@
     justify-content: space-between;
     font-size: x-large;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 2px;
     border: 2px solid #887a7a;
     margin: 50px;
     color: #0c0009; }
   .mainConocenos .loremConocenos {
-    background: radial-gradient(circle, #bdbdbd, violet); }
+    background: radial-gradient(circle, #fae2ce, white); }
 
 /*CONTACTO*/
 .mainContacto {
@@ -113,37 +120,37 @@
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #f1c6f1;
+  background-color: #ffeedd;
   align-items: center;
-  padding: 10rem; }
+  padding: 5rem; }
 
 .legendContacto {
-  background-color: #d6b6d6;
+  background-color: #fae2ce;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
+  border-top-right-radius: 10px;
+  border-bottom: black solid 0.5px; }
 
 .formContacto {
   margin: 0 auto;
-  background-color: antiquewhite;
-  border-radius: 10px; }
+  background-color: white;
+  border-radius: 10px;
+  border: black solid 0.5px; }
 
 .divForm {
   margin: 10px;
   text-align: left; }
-  .divForm .contacto {
-    background-color: plum; }
 
 .botonForm {
   margin-top: 25px;
   margin-bottom: 10px; }
   .botonForm .btnForm {
-    background-color: #d645f3;
+    background-color: #fae2ce;
     color: black;
-    border: #f82df8 5px;
+    border: #fae2ce;
     border-radius: 10px;
     padding: 0.5rem; }
   .botonForm .btnForm:hover {
-    background-color: plum;
+    background-color: #d4b17c;
     color: white; }
 
 .footerContacto {
@@ -160,13 +167,13 @@
 
 /*OPINIONES*/
 .mainOpiniones {
-  background-color: #f1c6f1;
+  background-color: #ffeedd;
   text-align: center;
   padding: 20px;
   flex-wrap: nowrap; }
 
 .divOpinionesGeneral {
-  background-color: #eb3beb;
+  background-color: #faf9f6;
   margin: 10px;
   border-radius: 10px; }
 
@@ -177,7 +184,7 @@
   flex-wrap: nowrap; }
 
 .h2MainOpiniones {
-  background-color: plum;
+  background-color: #fae2ce;
   font-size: 40px; }
 
 .h3Opiniones {

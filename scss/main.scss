@@ -11,14 +11,14 @@
 }
 
 %botones {
-    background-color: rgb(223, 80, 223);
+    background-color: rgb(247, 200, 130);
         border-radius: 1rem;
 }
 
 //nesting
 
 .headerGeneral{
-    background-color: rgb(214, 182, 214);
+    background-color: $color-principal;
     text-align: center;
     align-items: center;
     font-family: 'Calistoga', cursive;
@@ -51,7 +51,7 @@
     }
 
     .bienvenidos:hover{
-        color: rgb(236, 44, 236);
+        color: rgb(247, 200, 130);
     }
 
     .imgCialoInicio{
@@ -83,6 +83,11 @@
 }
 
 @media screen and (min-width:600px){
+    
+    .headerGeneral{
+        display: flex;
+        justify-content: space-between;
+    }
 
     .h1General{
         font-size: 50px;
@@ -91,6 +96,15 @@
     
 
 @media screen and (min-width:1024px){
+
+    .imgHeaderGeneral{
+        width: 50px;
+    }
+
+    .h1General{
+        font-size: 40px;
+    }
+
     .divMainOpi{
         @include flex;
     }
@@ -107,7 +121,7 @@
 }
 
 .card{
-    background-color: plum;
+    background-color: white;
 
     .texto-1{
         margin-top: 30px;
@@ -130,15 +144,15 @@
     }
 
     .btn{
-        background-color: rgb(214, 69, 243);
+        background-color: $color-principal;
         color: black;
-        border: rgb(248, 45, 248) 0.5px solid;
+        border: solid 0.5px ;
         border-radius: 10px;
         padding: 0.5;
     }
     
     .btn:hover{
-        background-color: plum;
+        background-color: rgb(212, 177, 124);
         color: white;
     }
     
@@ -157,7 +171,7 @@
         justify-content: space-between;
         font-size: x-large;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 2px;
         border: 2px solid rgb(136, 122, 122);
         margin: 50px;
         color: rgb(12, 0, 9);
@@ -165,7 +179,7 @@
     
     /*  GRADIANTES */
     .loremConocenos{
-        background: radial-gradient(circle, rgb(189, 189, 189), violet);
+        background: radial-gradient(circle, $color-principal, white);
     }
 }
 
@@ -177,21 +191,23 @@
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(241, 198, 241);
+    background-color: $color-secundario;
     align-items: center;
-    padding: 10rem;
+    padding: 5rem;
 }
 
 .legendContacto{
-    background-color: rgb(214, 182, 214); 
+    background-color: $color-principal; 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom: black solid 0.5px;
 }
 
 .formContacto{
     margin: 0 auto;
-    background-color: antiquewhite;
+    background-color: white;
     border-radius: 10px;
+    border: black solid 0.5px;
 }
 
 .divForm{
@@ -199,7 +215,6 @@
     text-align: left;
 
     .contacto{
-        background-color: plum;
     }
 }
 
@@ -208,15 +223,15 @@
     margin-bottom: 10px;
 
     .btnForm{
-        background-color: rgb(214, 69, 243);
+        background-color: $color-principal;
         color: black;
-        border: rgb(248, 45, 248) 5px;
+        border: $color-principal;
         border-radius: 10px;
         padding: 0.5rem;
     }
 
     .btnForm:hover{
-        background-color: plum;
+        background-color: rgb(212, 177, 124);
         color: white;
     }
 }
@@ -239,14 +254,14 @@
 /*OPINIONES*/
 
 .mainOpiniones{
-    background-color: rgb(241, 198, 241);
+    background-color: $color-secundario;
     text-align: center; 
     padding: 20px;
     flex-wrap: nowrap;
 }
 
 .divOpinionesGeneral{
-    background-color: rgb(235, 59, 235);
+    background-color: rgb(250, 249, 246);
     margin: 10px;
     border-radius: 10px;
 }
@@ -259,7 +274,7 @@
 }
 
 .h2MainOpiniones{
-    background-color: plum;
+    background-color: $color-principal;
     font-size: 40px ;
 }
 
