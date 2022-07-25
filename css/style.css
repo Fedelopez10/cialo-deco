@@ -1,6 +1,12 @@
 .headerGeneral .nav-item:hover {
-  background-color: #f7c882;
+  background-color: #f7d197;
   border-radius: 1rem; }
+
+.gridInicio {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 3.5fr 0.5fr;
+  max-height: 100vh; }
 
 .headerGeneral {
   background-color: #fae2ce;
@@ -9,9 +15,14 @@
   font-family: 'Calistoga', cursive;
   color: #240624;
   max-width: 100vw;
-  margin: 0; }
+  margin: 0;
+  grid-area: header; }
   .headerGeneral .imgHeaderGeneral {
     width: 12rem; }
+  .headerGeneral .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .headerGeneral .hamb {
     display: flex;
     justify-content: center;
@@ -19,7 +30,8 @@
 
 .mainGeneral {
   background-color: #ffeedd;
-  text-align: center; }
+  text-align: center;
+  grid-area: main; }
   .mainGeneral .bienvenidos {
     font-size: 2rem; }
   .mainGeneral .bienvenidos:hover {
@@ -27,41 +39,40 @@
   .mainGeneral .imgCialoInicio {
     width: 20rem; }
 
-.logoInstagram {
-  width: 45px; }
-
-.logoFacebook {
-  width: 34px;
-  margin: 10px; }
-
 .footerGeneral {
   background-color: #fae2ce;
   text-align: center;
-  padding: 10px; }
-
-.divAsideInicio {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem; }
+  padding: 10px;
+  grid-area: footer; }
+  .footerGeneral .divAsideInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footerGeneral .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem; }
+  .footerGeneral .logoInstagram {
+    width: 80px; }
+  .footerGeneral .logoFacebook {
+    width: 65px;
+    margin: 8px; }
 
 @media screen and (min-width: 600px) {
+  .h1General {
+    font-size: 50px; }
+  .navbar-nav {
+    flex-direction: row; } }
+
+@media screen and (min-width: 1024px) {
   .headerGeneral {
     display: flex;
     justify-content: space-between; }
-  .h1General {
-    font-size: 50px; } }
-
-@media screen and (min-width: 1024px) {
-  .imgHeaderGeneral {
-    width: 50px; }
-  .h1General {
-    font-size: 40px; }
+    .headerGeneral .imgHeaderGeneral {
+      width: 10rem; }
+    .headerGeneral .h1General {
+      font-size: 40px; }
   .divMainOpi {
     display: flex;
     justify-content: center;
@@ -76,15 +87,17 @@
 .card {
   background-color: white; }
   .card .texto-1 {
-    margin-top: 30px; }
+    margin-top: 38px; }
   .card .texto-2 {
-    margin-top: 45px; }
+    margin-top: 15px; }
   .card .texto-3 {
-    margin-top: 100px; }
-  .card .texto-5 {
-    margin-top: 115px; }
-  .card .texto-6 {
+    margin-top: 88px; }
+  .card .texto-4 {
     margin-top: 75px; }
+  .card .texto-5 {
+    margin-top: 95px; }
+  .card .texto-6 {
+    margin-top: 70px; }
   .card .btn {
     background-color: #fae2ce;
     color: black;
@@ -102,9 +115,7 @@
   background-color: #ffeedd;
   /*  GRADIANTES */ }
   .mainConocenos .loremConocenos {
-    display: flex;
     text-align: center;
-    justify-content: space-between;
     font-size: x-large;
     text-align: center;
     border-radius: 2px;
@@ -166,28 +177,39 @@
   padding: 8rem; }
 
 /*OPINIONES*/
+.gridOpi {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 3.5fr 0.5fr;
+  max-height: 100vh; }
+
+.headerOpi {
+  grid-area: header; }
+
 .mainOpiniones {
   background-color: #ffeedd;
   text-align: center;
   padding: 20px;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  grid-area: main; }
+  .mainOpiniones .imgOpi {
+    width: 5rem; }
+  .mainOpiniones .divOpinionesGeneral {
+    background-color: #faf9f6;
+    margin: 10px;
+    border-radius: 10px; }
+  .mainOpiniones .h3MainOpiniones {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: nowrap; }
+  .mainOpiniones .h2MainOpiniones {
+    background-color: #fae2ce;
+    font-size: 40px; }
+  .mainOpiniones .h3Opiniones {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Calistoga', cursive; }
 
-.divOpinionesGeneral {
-  background-color: #faf9f6;
-  margin: 10px;
-  border-radius: 10px; }
-
-.h3MainOpiniones {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 60px;
-  display: flex;
-  flex-wrap: nowrap; }
-
-.h2MainOpiniones {
-  background-color: #fae2ce;
-  font-size: 40px; }
-
-.h3Opiniones {
-  font-size: 25px;
-  text-align: center;
-  font-family: 'Calistoga', cursive; }
+.footerOpi {
+  grid-area: footer; }
